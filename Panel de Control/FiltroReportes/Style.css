@@ -24,7 +24,7 @@ background-color: #007BFF;
 
 .right {
 flex: 75%;
-color:white;
+
 }
 
 .navbar{
@@ -228,4 +228,87 @@ button:hover {
     position: relative;
 }
 
+.half.right h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 
+/* Style labels */
+label {
+    font-weight: bold;
+}
+
+/* Style form inputs and button */
+input[type="text"],
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Apply styles to the container div */
+.half.right {
+    float: none; /* Remove the float */
+    width: 100%; /* Take up 100% of the parent's width */
+    text-align: center; /* Center the content horizontally */
+}
+
+/* Center the form within the container */
+#agregarInformeForm {
+    display: inline-block;
+    text-align: left; /* Reset text alignment for form elements */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+/* Style the heading */
+.half.right h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style labels */
+label {
+    font-weight: bold;
+}
+
+/* Style form inputs and button */
+input[type="text"],
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
