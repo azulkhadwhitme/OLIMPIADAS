@@ -2,57 +2,76 @@
 {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
-    overflow-y: hidden;
+ 
 }
-
 body
 {
-    background-color: rgb(0, 0, 0);
+    body {
+        display: flex;
+        height: 100vh; /* Altura del viewport */
+        margin: 0; /* Elimina márgenes predeterminados del body */
+        background-color: #f0f0f0; /* Color de fondo de la página */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+}
+.container {
+    display: flex;
+  height: 100vh;
 }
 
-.linea_alta
-{
-    height: 10vh;
-    background-color:hsla(225, 100%, 61%, 1);
+.half {
+    height: 100%;
+}
+
+.left {
+    flex: 25%;
+background-color: #007BFF;
+}
+
+.right {
+flex: 75%;
 
 }
 
-.titulo
-{
-    color: white;
-    font-size: 40px;
-    left: 25px;
-    top: 10px;
-    width: 60vw; 
-    position: relative;
-}
-
-
-
-.navbar
-{
+.navbar{
     padding: 0%;
     margin: 0%;
+    height: 56px;
     background-color: hsla(225, 100%, 50%, 1);
-    width: 25%;
-    height: 90vh;
     color: white;
+    
    
 }
+
 ul
 {
 margin: 0%;
 padding: 0%;
+width:100%;
+height: 56px;
+background-color:hsla(225, 100%, 50%, 1);
 }
-
+li
+{
+    width:100%;
+    height: 100%;
+}
 .menu
 {
     
     list-style-type: none;
     text-decoration: none;
     font-style: none;
-margin: 10;
-    height: 9vh;
+
+
     text-align: center;
 }
 
@@ -61,46 +80,88 @@ margin: 10;
     background-color: rgb(0, 26, 255);
 }
 
-a
-{
-
-    position:relative;
-    text-decoration: none;
-    font-style: none;
+a {
+    display: block;
+    padding: 10px;
     color: white;
-    bottom: 20px;
-    top: 20px;
-
     text-align: center;
-
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-.titulom
+a:hover {
+    background-color: rgb(0, 26, 255);
+}
+.linea_alta
 {
-    display:flex;
-    justify-content: space-around;
-    position: relative;
+    height: 10vh;
+    background-color:hsla(225, 100%, 61%, 1);
 
+}
+/* Estilo para la clase ficha-paciente */
+.ficha-paciente {
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario horizontalmente */
+    padding: 20px;
+    color: #333;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para las secciones */
+.section {
     margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
 }
 
-.informacion
-{
-    position: absolute;
-    /* border: red solid 1px; */
-    height: 89.7vh;
-    width: 74.8vw;
-    left: 25%;
-    
-    
+/* Estilo para los títulos de sección */
+.section h2 {
+    font-size: 18px;
+    color: #333;
 }
 
-.informacion p 
-{
+/* Estilo para las etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
 
-    color: white;
-    
-    
+/* Estilo para los campos de entrada de texto */
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="radio"],
+input[type="submit"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para los botones de radio */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Estilo para el botón de enviar */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+/* Cambiar color del botón al pasar el mouse por encima */
+input[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
 .titulo-men
@@ -114,107 +175,164 @@ a
     font-size: 25px;
     /* border: blue solid 1px; */
     width: 500px;
-    
+}
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
 }
 
-.datos
-{
-    /* border: green solid 1px; */
-    position: relative;
-    
-}
-
-.factos
-{
-    list-style-type: none;
-    text-decoration: none;
-    font-style: none;
-
+header {
+    background-color: #007BFF;
+    color: white;
     text-align: center;
-    
-    
-    width: 400px;
-
-    display:flex;
-    justify-content: space-around;
+    padding: 20px 0;
 }
 
-.botones
-{
-    /*border: violet solid 1px;*/
-    width: 100px;
+section {
+    background-color: rgb(148, 216, 247);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.opo
+label {
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th, td {
+    padding: 8px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.titulo
 {
-    
-    display:flex;
-    justify-content: space-around;
+    color: white;
+    font-size: 40px;
+    left: 25px;
+    top: 10px;
+    width: 60vw; 
     position: relative;
 }
 
-.line
-{
-    background-color: white;
-    height: 10px;
-    width: 70vw;
-    position:absolute;
-    border-radius: 10px;
-
-    top: 25vh;
-    left: 27vw;
+.half.right h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-.informacion2
-{
-    position: absolute;
-    /* border: red solid 1px; */
-    height: 89.7vh;
-    width: 74.8vw;
-    left: 25%;
-    top: 30%;
-    
+/* Style labels */
+label {
+    font-weight: bold;
 }
 
-.informacion2 p 
-{
-
-    color: white;
-    
+/* Style form inputs and button */
+input[type="text"],
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.informacion3
-{
-    position: absolute;
-    /* border: red solid 1px; */
-    height: 89.7vh;
-    width: 74.8vw;
-    left: 25%;
-    top: 40%;
-    
+button[type="submit"] {
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.informacion3 p 
-{
-
-    color: white;
-    
+/* Hover effect for the submit button */
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
-.informacion4
-{
-    position: absolute;
-    /* border: red solid 1px; */
-    height: 89.7vh;
-    width: 74.8vw;
-    left: 25%;
-    top: 50%;
-    
+/* Apply styles to the container div */
+.half.right {
+    float: none; /* Remove the float */
+    width: 100%; /* Take up 100% of the parent's width */
+    text-align: center; /* Center the content horizontally */
 }
 
-.informacion4 p 
-{
+/* Center the form within the container */
+#agregarInformeForm {
+    display: inline-block;
+    text-align: left; /* Reset text alignment for form elements */
+    margin: 0 auto; /* Center the form horizontally */
+}
 
-    color: white;
-    
+/* Style the heading */
+.half.right h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style labels */
+label {
+    font-weight: bold;
+}
+
+/* Style form inputs and button */
+input[type="text"],
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+form {
+    text-align: left; /* Alinea el contenido del formulario a la izquierda */
+    padding: 20px; /* Espaciado interno del formulario */
+    background-color: #fff; /* Fondo del formulario */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
 }
