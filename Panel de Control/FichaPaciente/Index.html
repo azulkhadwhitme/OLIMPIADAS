@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dividir Pantalla en Dos</title>
+</head>
+<body>
+    <div>
+        <nav class="linea_alta">
+            <h1 class="titulo">Codigo Azul</p>
+        </nav>
+        </div>
+    <div class="container">
+        <div class="fixed">
+   
+          </div>
+        <div class="half left">
+            <nav class="navbar">
+                <ul>
+                    <li class="menu"><a href="../Modificacion/Index.html">Modificacion</a></li>
+                    <li class="menu"><a href="../CreaAreas/Index.html">Creacion de Areas</a></li>
+                    <li class="menu"><a href="../DarAlta/Index.html">Dar De Alta</a></li>
+                    <li class="menu"><a href="../AsignPacientes/Index.html">Asignacion De Pacientes</a></li>
+                    <li class="menu"><a href="../FichaPaciente/Index.html">Ficha Paciente</a></li>
+                    <li class="menu"><a href="../UbiPaciente/Index.html">Ubicacion de Paciente</a></li>
+                    <li class="menu"><a href="../VisualGraficos/Index.html">Visualizador de Graficos</a></li>
+                    <li class="menu"><a href="/Panel de Control/FiltroReportes/Index.html">Reportes</a></li>
+                    <li class="menu"><a href="../Reportes/Index.html">Filtrado de Reportes</a></li>
+               </ul>
+                </nav>
+        </div>
+        <div class="half right">    
+                <div class="informacion">
+                    <div class="titulom">
+                    <p class="titulo-men">Ficha de Paciente</p>
+                        <div class="ficha-paciente">
+                            <form>
+                                <!-- Información personal -->
+                                <div class="section">
+                                    <h2>Información Personal</h2>
+                                    <label for="nombre">Nombre:</label>
+                                    <input type="text" id="nombre" name="nombre"><br>
+                    
+                                    <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento"><br>
+                    
+                                    <label>Género:</label>
+                                    <input type="radio" id="genero-masculino" name="genero" value="Masculino">
+                                    <label for="genero-masculino">Masculino</label>
+                                    <input type="radio" id="genero-femenino" name="genero" value="Femenino">
+                                    <label for="genero-femenino">Femenino</label>
+                                    <input type="radio" id="genero-otro" name="genero" value="Otro">
+                                    <label for="genero-otro">Otro</label><br>
+                    
+                                    <label for="direccion">Dirección:</label>
+                                    <input type="text" id="direccion" name="direccion"><br>
+                    
+                                    <label for="telefono">Teléfono:</label>
+                                    <input type="tel" id="telefono" name="telefono"><br>
+                    
+                                    <label for="contacto-emergencia">Contacto de Emergencia:</label>
+                                    <input type="text" id="contacto-emergencia" name="contacto-emergencia"><br>
+                                </div>
+                    
+                                <!-- Información de Seguro Médico -->
+                                <div class="section">
+                                    <h2>Información de Seguro Médico</h2>
+                                    <label for="compania-seguro">Compañía de Seguro:</label>
+                                    <input type="text" id="compania-seguro" name="compania-seguro"><br>
+                    
+                                    <label for="numero-poliza">Número de Póliza:</label>
+                                    <input type="text" id="numero-poliza" name="numero-poliza"><br>
+                    
+                                    <label for="numero-afiliacion">Número de Afiliación:</label>
+                                    <input type="text" id="numero-afiliacion" name="numero-afiliacion"><br>
+                                </div>
+                    
+                                <!-- Historial Médico -->
+                                <div class="section">
+                                    <h2>Historial Médico</h2>
+                                    <!-- Agrega más campos según sea necesario -->
+                                </div>
+                    
+                                <!-- Notas y Observaciones Médicas -->
+                                <div class="section">
+                                    <h2>Notas y Observaciones Médicas</h2>
+                                    <textarea id="notas-observaciones" name="notas-observaciones" rows="4" cols="50"></textarea><br>
+                                </div>
+                    
+                                <!-- Botón de Enviar -->
+                                <div class="section">
+                                    <input type="submit" value="Guardar Ficha">
+                                </div>
+                            </form>
+                        </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

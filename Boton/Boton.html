@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    
+    <title>Mi Página Web</title>
+</head>
+<body>
+    <header>
+        <h1 class="Title">Codigo Azul</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <section>
+            <h2 class="Titulo">Contenido Principal</h2>
+            <p>Bienvenido a mi página web. Aquí encontrarás información interesante.</p>
+            <button id="miBoton">Haz clic</button>
+            <script>
+
+              function onClickBoton() {
+                  alert('¡Botón clickeado!');
+              }
+              document.getElementById('miBoton').addEventListener('click', onClickBoton);
+          </script>
+          
+        </section>
+    </main>
+    <footer class="FooterPos">
+        <p>Derechos de autor &copy; 2023 - Mi Página Web</p>
+    </footer>
+    <script src="https://cdn.socket.io/4.1.2/socket.io.js"></script>
+</body>
+</html>

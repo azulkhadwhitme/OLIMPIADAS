@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="Style.css" />
+    </head>
+    <body>
+        <div>
+            <nav class="linea_alta">
+                <h1 class="titulo">Codigo Azul</p>
+            </nav>
+            </div>
+
+            <div class="informacion">
+                <div class="titulom">
+                <p class="titulo-men">Grafico De Actividades</p>
+                </div>
+            </div>
+            <!-- aña !-->
+            <div class="informacion2">
+
+                <div class="left">
+                    <select name="" id="tipo">
+                        <option value="circular">
+                            Gráfico Circular
+                        </option>
+                        <option value="columna">
+                            Gráfico de Columnas
+                        </option>
+                    </select>
+                    <input type="text" placeholder="Título del Gráfico" id="titulo">
+                    <div class="datos" id="datos">
+                        <div class="dato">
+                            <input type="text" placeholder="Leyenda 1" class="serie">
+                            <input type="text" placeholder="Valor 1" class="valor">
+                        </div>
+                        <div class="dato">
+                            <input type="text" placeholder="Leyenda 2" class="serie">
+                            <input type="text" placeholder="Valor 2" class="valor">
+                        </div>
+                    </div>
+                    <button onclick="agregarDato()" class="agregar"> + </button>
+                    <button onclick="cargarGrafico()" class="crear-grafico">Crear Gráfico</button>
+                </div>
+                <div class="right">
+                    <div id="piechart"></div>
+                </div>
+            </div>
+            
+            <span class="line"></span>
+            <div>
+            <nav class="navbar">
+                <ul>
+                    <li class="menu"><a href="../Modificacion/Index.html">Modificacion</a></li>
+                    <li class="menu"><a href="../CreaAreas/Index.html">Creacion de Areas</a></li>
+                    <li class="menu"><a href="../DarAlta/Index.html">Dar De Alta</a></li>
+                    <li class="menu"><a href="../AsignPacientes/Index.html">Asignacion De Pacientes</a></li>
+                    <li class="menu"><a href="../FichaPaciente/Index.html">Ficha Paciente</a></li>
+                    <li class="menu"><a href="../UbiPaciente/Index.html">Ubicacion de Paciente</a></li>
+                    <li class="menu"><a href="../VisualGraficos/Index.html">Visualizador de Graficos</a></li>
+                    <li class="menu"><a href="/Panel de Control/FiltroReportes/Index.html">Reportes</a></li>
+                    <li class="menu"><a href="../Reporte/Index.html">Filtrado de Reportes</a></li>
+            </nav>
+        </div>
+        
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+
+
+
+    <title>reportes</title>
+</head>
+
+<body>
+    <div>
+        <nav class="linea_alta">
+            <h1 class="titulo">Codigo Azul</p>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="fixed">
+
+        </div>
+        <div class="half left">
+            <nav class="navbar">
+                <ul>
+                    <li class="menu"><a href="../Modificacion/Index.html">Modificacion</a></li>
+                    <li class="menu"><a href="../CreaAreas/Index.html">Creacion de Areas</a></li>
+                    <li class="menu"><a href="../DarAlta/Index.html">Dar De Alta</a></li>
+                    <li class="menu"><a href="../AsignPacientes/Index.html">Asignacion De Pacientes</a></li>
+                    <li class="menu"><a href="../FichaPaciente/Index.html">Ficha Paciente</a></li>
+                    <li class="menu"><a href="../UbiPaciente/Index.html">Ubicacion de Paciente</a></li>
+                    <li class="menu"><a href="../VisualGraficos/Index.html">Visualizador de Graficos</a></li>
+                    <li class="menu"><a href="/Panel de Control/FiltroReportes/Index.html">Reportes</a></li>
+                    <li class="menu"><a href="/Panel de Control/Reportes/Index.html">Filtrado de Reportes</a></li>
+                  
+                </ul>
+            </nav>
+        </div>
+        <div class="half right">
+                <header>
+                    <h1>Sistema de Reportes Médicos</h1>
+                </header>
+                <section id="filtro">
+                    <h2>Filtrar Reportes</h2>
+                    <label for="area">Área:</label>
+                    <select id="area">
+                        <option value="todas">Todas</option>
+                        <option value="cardiología">Cardiología</option>
+                        <option value="neurología">Neurología</option>
+                        <!-- Agrega más opciones aquí -->
+                    </select>
+                    <button id="filtrar">Filtrar</button>
+                </section>
+                <section id="reporte">
+                    <h2>Reporte Médico</h2>
+                    <table id="tabla-reportes">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Edad</th>
+                                <th>Diagnóstico</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Aquí se mostrarán los datos del informe -->
+                        </tbody>
+                    </table>
+                    <button id="generarPDF">Generar PDF</button>
+                </section>
+                <script src="script.js"></script>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

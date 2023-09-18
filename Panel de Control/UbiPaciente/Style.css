@@ -1,0 +1,220 @@
+*
+{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-y: hidden;
+}
+
+body
+{
+    background-color: rgb(0, 0, 0);
+}
+
+.linea_alta
+{
+    height: 10vh;
+    background-color:hsla(225, 100%, 61%, 1);
+
+}
+
+.titulo
+{
+    color: white;
+    font-size: 40px;
+    left: 25px;
+    top: 10px;
+    width: 60vw; 
+    position: relative;
+}
+
+
+
+.navbar
+{
+    padding: 0%;
+    margin: 0%;
+    background-color: hsla(225, 100%, 50%, 1);
+    width: 25%;
+    height: 90vh;
+    color: white;
+   
+}
+ul
+{
+margin: 0%;
+padding: 0%;
+}
+
+.menu
+{
+    
+    list-style-type: none;
+    text-decoration: none;
+    font-style: none;
+margin: 10;
+    height: 9vh;
+    text-align: center;
+}
+
+.menu:hover
+{
+    background-color: rgb(0, 26, 255);
+}
+
+a
+{
+
+    position:relative;
+    text-decoration: none;
+    font-style: none;
+    color: white;
+    bottom: 20px;
+    top: 20px;
+
+    text-align: center;
+
+}
+
+.titulom
+{
+    display:flex;
+    justify-content: space-around;
+    position: relative;
+
+    margin-bottom: 20px;
+}
+
+.informacion
+{
+    position: absolute;
+    /* border: red solid 1px; */
+    height: 89.7vh;
+    width: 74.8vw;
+    left: 25%;
+    
+    
+}
+
+.informacion p 
+{
+
+    color: white;
+    
+    
+}
+
+.titulo-men
+{
+    position: relative;
+
+    text-align: center;
+
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 25px;
+    /* border: blue solid 1px; */
+    width: 500px;
+    
+}
+
+.datos
+{
+    /* border: green solid 1px; */
+    position: relative;
+    
+}
+
+.factos
+{
+    list-style-type: none;
+    text-decoration: none;
+    font-style: none;
+
+    text-align: center;
+    
+    
+    width: 400px;
+
+    display:flex;
+    justify-content: space-around;
+}
+
+.botones
+{
+    /*border: violet solid 1px;*/
+    width: 100px;
+}
+
+.opo
+{
+    
+    display:flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.line
+{
+    background-color: white;
+    height: 10px;
+    width: 70vw;
+    position:absolute;
+    border-radius: 10px;
+
+    top: 25vh;
+    left: 27vw;
+}
+
+.informacion2
+{
+    position: absolute;
+    /* border: red solid 1px; */
+    height: 89.7vh;
+    width: 74.8vw;
+    left: 25%;
+    top: 30%;
+    
+}
+
+.informacion2 p 
+{
+
+    color: white;
+    
+}
+
+.informacion3
+{
+    position: absolute;
+    /* border: red solid 1px; */
+    height: 89.7vh;
+    width: 74.8vw;
+    left: 25%;
+    top: 40%;
+    
+}
+
+.informacion3 p 
+{
+
+    color: white;
+    
+}
+
+.informacion4
+{
+    position: absolute;
+    /* border: red solid 1px; */
+    height: 89.7vh;
+    width: 74.8vw;
+    left: 25%;
+    top: 50%;
+    
+}
+
+.informacion4 p 
+{
+
+    color: white;
+    
+}

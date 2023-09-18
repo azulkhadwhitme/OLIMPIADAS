@@ -1,0 +1,81 @@
+*
+{
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0 auto;
+}
+
+header
+{
+	background-color: hsla(214, 100%, 56%, 1);
+
+}
+.Title
+{
+	color: white;
+	padding: 20px;
+}
+
+.navbar
+{
+	height: 60px;
+    width: auto;
+    position: absolute;
+	align-items: left;	
+	left: 60%;
+    top: 10px;
+    color: white;
+}
+
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+    cursor: auto;
+
+  }
+  
+  a:link:active, a:visited:active {
+    color: white;
+  }
+
+.navbar ul {
+    height: 60px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar ul li {
+    height: 50px;
+    width: 130px;
+    margin: 0 10px;
+    display: grid;
+    place-items: center;
+    border-radius: 90px;
+    transition: 0.5s;
+    border: white solid 2px;
+    
+}
+
+.content
+{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    border: red solid 1px;
+
+    text-align: center;
+}
+
+.Titulo
+{
+    margin-bottom: 20px;
+    border: blue solid 1px;
+}
+
+.FooterPos
+{
+    position: absolute;
+    top: 95%;
+
+}

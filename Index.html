@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    
+    <title>Mi Página Web</title>
+</head>
+<body class="text-center">
+    
+    <main class="form-signin w-100 m-auto">
+  
+        <h1>Codigo Azul</h1>
+        <h2 class="h3 mb-3 fw-normal">inicio de sesión</h2>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="floatingInput" placeholder="Carlos Alvarez" name="email">
+          <label for="floatingInput">Correo electrónico</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+          <label for="floatingPassword">Password</label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" id="redirigirBtn">Iniciar sesión</button>
+        <script>
+          document.getElementById("redirigirBtn").addEventListener("click", function() {
+              window.location.href = "/Panel de Control/Panel de Control.html";
+          });
+      </script>
+        <div class="my-2">
+          <a href="recovery.php">¿Olvidaste tu contraseña?</a>
+        </div>
+        </div>
+      </form>
+    </main>
+    
+    
+    <?php
+$servername = "localhost";
+$database = "wi";
+$username = "root";
+$password = "";
+
+$conexion = mysqli_connect($servername, $username, $password, $database);
+
+if (!$conexion) {
+    die("Error de conexión: " . mysqli_connect_error());
+}
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $Nombre = $_POST['Nombre'];
+    $Email = $_POST['Email'];
+    $Contraseña = $_POST['Contraseña'];
+    $SQL = "INSERT INTO usuarios(usuario, correo, Contraseña) VALUES('$Nombre', '$Email', '$Contraseña')";
+
+    if (mysqli_query($conexion, $SQL)) {
+        echo "Nuevo usuario registrado correctamente"; header(Location:"https://fus3d.com.ar");
+    } else {
+        echo "Error al registrar el usuario: " . mysqli_error($conexion);
+       
+    }
+}
+
+mysqli_close($conexion);
+?>
+
+      </body>
+</html>

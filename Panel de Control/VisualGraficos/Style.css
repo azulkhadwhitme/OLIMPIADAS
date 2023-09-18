@@ -1,0 +1,256 @@
+*
+{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-y: hidden;
+}
+
+body
+{
+    background-color: rgb(0, 0, 0);
+}
+
+.linea_alta
+{
+    height: 10vh;
+    background-color:hsla(225, 100%, 61%, 1);
+
+}
+
+.titulo
+{
+    color: white;
+    font-size: 40px;
+    left: 25px;
+    top: 10px;
+    width: 60vw; 
+    position: relative;
+}
+
+
+
+.navbar
+{
+    padding: 0%;
+    margin: 0%;
+    background-color: hsla(225, 100%, 50%, 1);
+    width: 25%;
+    height: 90vh;
+    color: white;
+   
+}
+ul
+{
+margin: 0%;
+padding: 0%;
+}
+
+.menu
+{
+    
+    list-style-type: none;
+    text-decoration: none;
+    font-style: none;
+margin: 10;
+    height: 9vh;
+    text-align: center;
+}
+
+.menu:hover
+{
+    background-color: rgb(0, 26, 255);
+}
+
+a
+{
+
+    position:relative;
+    text-decoration: none;
+    font-style: none;
+    color: white;
+    bottom: 20px;
+    top: 20px;
+
+    text-align: center;
+
+}
+
+.titulom
+{
+    display:flex;
+    justify-content: space-around;
+    position: relative;
+
+    margin-bottom: 20px;
+}
+
+.informacion
+{
+    position: absolute;
+    /* border: red solid 1px; */
+    height: 89.7vh;
+    width: 74.8vw;
+    left: 25%;
+    background-color:#e4e4e4;
+    
+    
+}
+
+.informacion p 
+{
+
+    color: white;
+    
+    
+}
+
+.titulo-men
+{
+    position: relative;
+
+    text-align: center;
+
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 25px;
+    /* border: blue solid 1px; */
+    width: 500px;
+    
+}
+
+.datos
+{
+    /* border: green solid 1px; */
+    position: relative;
+    
+}
+
+.factos
+{
+    list-style-type: none;
+    text-decoration: none;
+    font-style: none;
+
+    text-align: center;
+    
+    
+    width: 400px;
+
+    display:flex;
+    justify-content: space-around;
+}
+
+.botones
+{
+    /*border: violet solid 1px;*/
+    width: 100px;
+}
+
+.opo
+{
+    
+    display:flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.line
+{
+    background-color: white;
+    height: 10px;
+    width: 70vw;
+    position:absolute;
+    border-radius: 10px;
+
+    top: 25vh;
+    left: 27vw;
+}
+
+.informacion2
+{
+    position: absolute;
+    /* border: red solid 1px; */
+    height: 89.7vh;
+    width: 74.8vw;
+    left: 25%;
+    top: 30%;
+    
+}
+
+.informacion2 p 
+{
+
+    color: white;
+    
+}
+
+.left {
+    max-width: 500px;
+    border: 1px solid #ffffff;
+    padding: 20px;
+    float: left;
+}
+
+select {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input {
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #88d498;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+}
+
+#titulo {
+    font-weight: bold;
+}
+
+.dato .serie {
+    width: 70%;
+    margin-right: 15px;
+}
+
+.dato .valor {
+    width: 20%;
+}
+
+.agregar {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #18936f;
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.crear-grafico {
+    float: right;
+    background-color: #18936f;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.right {
+
+    border: 1px solid #000;
+    max-width: 500px;
+    display:flex;
+    justify-content: space-around;
+    position: relative;
+}
+
